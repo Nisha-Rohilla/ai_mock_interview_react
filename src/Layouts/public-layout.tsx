@@ -8,11 +8,15 @@ function PublicLayout() {
         <div className="w-full">
             {/* Handler to store the user data */}
             <Header />
+
+
             <Outlet />
+
+
             <Footer />
 
         </div>
     )
 }
 
-export default PublicLayout
+export default PublicLayout;

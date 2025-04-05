@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
-import PublicLayout from "./Layouts/public-layout"
+import PublicLayout from "@/Layouts/public-layout"
 import AuthenticationLayout from "./Layouts/auth-layout"
 
-import HomePage from "./routes/home"
+import HomePage from "@/routes/home"
 import SignInPage from "./routes/sign-in"
 import SignUpPage from "./routes/sign-up"
 
@@ -15,7 +15,8 @@ const App = () => {
     <Router>
       <Routes>
         {/* public routes */}
-        <Route element={<PublicLayout />}><Route index element={<HomePage />} />
+        <Route element={<PublicLayout />}>
+          <Route index element={<HomePage />} />
         </Route>
 
         {/* authentication layout */}
